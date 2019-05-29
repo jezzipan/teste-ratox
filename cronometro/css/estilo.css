@@ -1,27 +1,17 @@
 
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #FFC89E;
- 
-}
-
-.menu {
-    background-color: #CC992D;
-    background-attachment: fixed;
+    background-color: #EDEDED;
     text-align: center;
-    padding: 8px;
-    font-family: 'Yantramanav', sans-serif;
-    color: #402714;
 }
 
 main{
     width: 100vw;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Yantramanav', sans-serif;
-    
+    height: 80vh;
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 2em;
+    padding-top: 1em;
+    text-align: center;
 }
 
 h1:hover{
@@ -36,17 +26,10 @@ h1:hover{
 }
 
 .container {
-    background-color: #402714;
-    border-radius: 10px 20px 30px;
-    width: 40vw;
-    height: 70vh;    
-    position: relative;
-    top: 35%;
-    
+    width: 20vw;
 }
 
 footer {
-    background-color: #CC992D;
     text-align: center;
     padding: 2px;
     margin-top: 20px;
@@ -71,17 +54,18 @@ a:hover{
     text-decoration: none;
 }
 .botom{
-    width: 30vw;
-    height: 50vh; 
     display: flex;    
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
+    text-align: center;
 }
 button {
-    background-color: #FF9D52;
-    width: 30%;
-    height: 20%;
-    border-radius: 10px;
-    color: #FF9D52;
+    background-color: rgb(235, 227, 222);
+    width: 20%;
+    height: 15%;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: monospace; 
 }
