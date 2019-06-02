@@ -1,39 +1,43 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-         <title>Cronômetro</title>
-        <link rel="icon" href="image/time.png">
-        <link rel="stylesheet" href="css/estilo.css">
-      </head>
-      <body>
-          <header class="menu">
-              <h1> Cronômetro </h1>
-          </header>
-        <main>
-            <section class="content">
-                <section class="container">
-                    <h2 data-chronometer>00:00:00</h2>
-                    <div class="botom">
-                        <button id="start">
-                            Start
-                        </button> 
-                        <button id="pause">
-                            Pause
-                        </button> 
-                        <button id="save">
-                            Save
-                        </button>
-                    </div>
-                </section>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro</title>
+    <link rel="icon" href="image/time.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+
+</head>
+
+<body>
+    <main>
+        <header class="menu">
+            <h1> Cronômetro </h1>
+        </header>
+       
+        <h2 class="stopwatch"></h2>
+
+        <section class="content">
+
+            <section class="container">
+                <div class="controls">
+                    <button><a href="#" class="btn" onClick="stopwatch.start();">Start</a></button>
+                    <button><a href="#" class="btn" onClick="stopwatch.save();">Save</a></button>
+                    <button><a href="#" class="btn" onClick="stopwatch.stop();">Stop</a></button>
+                </div>
+                <ul class="resultados"></ul>
             </section>
-        </main>
-        <footer>
-            <p>Made with <span class="core">♥</span> by <a href="mailto:jessica.leute@gmail.com" target="_blank">Jessica
-                    Oliveira</a> - 2019</p>
-            <div>
-                <a href="https://github.com/jezzipan"> <img class="redes" src="image/github.png" alt="GitHub"></a>
-            </div>
-        </footer>
-        </body>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a class="github" href="https://github.com/jezzipan" target="_blank"> <img class="redes"
+                    src="image/github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 
 </html>
