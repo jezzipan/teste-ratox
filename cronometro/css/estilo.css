@@ -170,10 +170,9 @@ main{
 }
 
 .controls {
-    width: 40vw;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
   }
   button { 
     background-color: #333;
@@ -182,7 +181,7 @@ main{
   }
   .btn {
     color: #828282;
-    font-size: 3rem;
+    font-size: 5rem;
     text-decoration: none;
     border: 2px solid #222;
     text-transform: uppercase;
