@@ -122,15 +122,14 @@ footer {
     text-align: center;
 }
 
+
 .github{
     color: #402714;
     text-decoration: none;
 }
 
-
-
-  /* On screens that are 600px*/
-@media screen and (max-width: 763px) {
+  /* On screens that are 762px*/
+@media screen and (max-width: 762px) {
     
     * {
         margin: 0;
