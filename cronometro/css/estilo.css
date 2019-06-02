@@ -111,14 +111,14 @@ main{
 }
 
 footer {
-    height: 70vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 .redes {
-    width: 40px;
+    width: 80px;
     text-align: center;
 }
 
@@ -128,18 +128,18 @@ footer {
 }
 
 
-/* On screens that are 992px */
-@media screen and (max-width: 992px) {
+
+  /* On screens that are 600px*/
+@media screen and (max-width: 763px) {
+    
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         background-color: #222;
       }
-  }
-  
-  /* On screens that are 600px*/
-@media screen and (max-width: 763px) {
+
+
     h1 {
         color: #9a8297;
         font-family: monospace;
@@ -160,6 +160,7 @@ main{
     margin: 0 auto;
     font-family: monospace;
     font-size: 2em;
+    padding-top: 1em;
     text-align: center;
 }
  
@@ -169,6 +170,30 @@ main{
     justify-content: center;
 }
 
+.controls {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  button { 
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  .btn {
+    color: #828282;
+    font-size: 3rem;
+    text-decoration: none;
+    border: 2px solid #222;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    color: #b8b8b8;
+    border: 2px solid #222;
+    border-radius: 5px #222;
+  }
 
 footer {
     display: flex;
@@ -177,7 +202,7 @@ footer {
 }
 
 .redes {
-    width: 40px;
+    width: 60px;
     text-align: center;
 }
   }
