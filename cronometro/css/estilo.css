@@ -122,7 +122,12 @@ footer {
     width: 80px;
     text-align: center;
 }
+ 
+img.redes:hover {
+  width: 100px;
+}
 
+.red
 
 .github{
     color: #402714;
