@@ -13,10 +13,12 @@ scroll-behavior: smooth;
 }
 
 .controls {
-width: 40vw;
-display: flex;
-justify-content: space-evenly;
-margin: 0 auto;
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
 }
 
 button { 
