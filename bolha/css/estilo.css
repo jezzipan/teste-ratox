@@ -3,4 +3,37 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-  }
+    overflow:scroll;
+}
+
+h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 6rem;
+    color: #42A8C7;
+    text-align: center
+}
+
+
+main {
+    max-width: 50vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.redes {
+    width: 80px;
+    transition-delay: .5s;
+    text-align: center;
+}
+
+img.redes:hover {
+    width: 100px;
+    transition-delay: .5s;
+}
+
