@@ -1,39 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fff;
-    overflow:scroll;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: scroll;
 }
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} */
 
 h1 {
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 6rem;
-    color: #42A8C7;
-    text-align: center
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 6rem;
+  color: #42a8c7;
+  text-align: center;
 }
 
-
 main {
-    max-width: 50vw;
-    margin: 0 auto;
-    height: 100vh;
+  max-width: 50vw;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.bolha {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
 }
 
 footer {
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .redes {
-    width: 80px;
-    transition-delay: .5s;
-    text-align: center;
+  width: 80px;
+  transition-delay: 0.5s;
+  text-align: center;
 }
 
 img.redes:hover {
-    width: 100px;
-    transition-delay: .5s;
+  width: 100px;
+  transition-delay: 0.5s;
 }
-
