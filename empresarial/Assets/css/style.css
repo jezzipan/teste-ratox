@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.nav-header {
+  background-color: #fff159;
+  position: relative;
+  height: 10vh;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  background-color: #fff;
+  background-image: image('/Assets/image/ic_Search.png');
+  width: 30%;
+  height: 30%;
+}
