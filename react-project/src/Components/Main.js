@@ -12,49 +12,60 @@ export default class Main extends Component {
   state = {
     novaTarefa: "",
     tarefas: [],
-    index: -1,
+    index: -1
   };
 
-  handleSubmit = (e) => {
+  componentDidMount() {
+    const tarefas = JSON.parse(localStorage.getItem('tarefas'));
+    if (!tarefas) return;
+    this.setState({tarefas});
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { tarefas } = this.state;
+    if (tarefas === prevState.tarefas) return;
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+  }
+
+  handleSubmit = e => {
     e.preventDefault();
-    const {tarefas, index} = this.state;
-    let {novaTarefa} = this.state;
+    const { tarefas, index } = this.state;
+    let { novaTarefa } = this.state;
     novaTarefa = novaTarefa.trim();
 
-    if(tarefas.indexOf(novaTarefa) !== -1) return
+    if (tarefas.indexOf(novaTarefa) !== -1) return;
 
     const novasTarefas = [...tarefas];
 
     if (index === -1) {
-      this.setState ({
+      this.setState({
         tarefas: [...novasTarefas, novaTarefa],
-        novaTarefa: '',
-      })
+        novaTarefa: ""
+      });
     } else {
       novasTarefas[index] = novaTarefa;
 
       this.setState({
-        tarefas: [... novasTarefas],
-        index: -1,
+        tarefas: [...novasTarefas],
+        index: -1
       });
     }
+  };
 
-  }
-
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({
       novaTarefa: e.target.value
     });
-  }
+  };
 
   handleEdit = (e, index) => {
     const { tarefas } = this.state;
 
     this.setState({
       index,
-      novaTarefa: tarefas[index],
+      novaTarefa: tarefas[index]
     });
-  }
+  };
 
   handleDelete = (e, index) => {
     const { tarefas } = this.state;
@@ -62,10 +73,9 @@ export default class Main extends Component {
     novasTarefas.splice(index, 1);
 
     this.setState({
-      tarefas: [...novasTarefas],
+      tarefas: [...novasTarefas]
     });
-  }
-
+  };
 
   render() {
     const { novaTarefa, tarefas } = this.state;
@@ -74,7 +84,7 @@ export default class Main extends Component {
       <div className="main">
         <h1>Lista de tarefas</h1>
 
-        <form onSubmit= {this.handleSubmit} action="#" className="form">
+        <form onSubmit={this.handleSubmit} action="#" className="form">
           <input onChange={this.handleChange} type="text" value={novaTarefa} />
           <button type="submit">
             <FaPlus />
@@ -85,10 +95,16 @@ export default class Main extends Component {
           {tarefas.map((tarefa, index) => (
             <li key={tarefa}>
               {tarefa}
-            <span>
-              <FaEdit className="edit" onClick = {(e) => this.handleEdit(e, index)} />
-              <FaWindowClose onClick = {(e) => this.handleDelete(e, index)} className="delete" />
-            </span>
+              <span>
+                <FaEdit
+                  className="edit"
+                  onClick={e => this.handleEdit(e, index)}
+                />
+                <FaWindowClose
+                  onClick={e => this.handleDelete(e, index)}
+                  className="delete"
+                />
+              </span>
             </li>
           ))}
         </ul>
