@@ -11,4 +11,31 @@
 .main h1 {
   font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type="text"] {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 80%;
+}
+
+.form button[type="submit"] {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color:	#008b4a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
